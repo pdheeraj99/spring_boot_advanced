@@ -1,0 +1,8 @@
+[INFO] [stdout] 2026-02-06T15:13:36.103+05:30  INFO 27072 --- [circuit-breaker-demo] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[INFO] [stdout] 2026-02-06T15:13:36.439+05:30  INFO 27072 --- [circuit-breaker-demo] [  restartedMain] c.d.c.CircuitBreakerDemoApplication      : Started CircuitBreakerDemoApplication in 11.586 seconds (process running for 12.559)
+[INFO] [stdout] 2026-02-06T15:15:56.599+05:30  INFO 27072 --- [circuit-breaker-demo] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 15 deletions, 1 modification)
+[INFO] [stdout] 2026-02-06T15:16:05.311+05:30  INFO 27072 --- [circuit-breaker-demo] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[INFO] [stdout] 2026-02-06T15:16:05.401+05:30  INFO 27072 --- [circuit-breaker-demo] [  restartedMain] c.d.c.CircuitBreakerDemoApplication      : Started CircuitBreakerDemoApplication in 8.568 seconds (process running for 161.521)
+[INFO] [stdout] 2026-02-06T15:16:06.735+05:30  INFO 27072 --- [circuit-breaker-demo] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 15 class path changes (15 additions, 0 deletions, 0 modifications)
+[INFO] [stdout] 2026-02-06T15:16:11.595+05:30  INFO 27072 --- [circuit-breaker-demo] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[INFO] [stdout] 2026-02-06T15:16:11.786+05:30  INFO 27072 --- [circuit-breaker-demo] [  restartedMain] c.d.c.CircuitBreakerDemoApplication      : Started CircuitBreakerDemoApplication in 4.924 seconds (process running for 167.906)

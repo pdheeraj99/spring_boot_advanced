@@ -1,0 +1,39 @@
+﻿{
+    "generatedAt":  "2026-02-06T15:26:51.2286682+05:30",
+    "summary":  {
+                    "totalCalls":  38,
+                    "successfulCalls":  38,
+                    "failedCalls":  0,
+                    "fallbackCalls":  25,
+                    "fallbackPercentage":  65.79,
+                    "availabilityWithCircuitBreaker":  100,
+                    "availabilityWithoutCircuitBreaker":  34.21
+                },
+    "responseTimes":  {
+                          "externalService":  {
+                                                  "avgMs":  225.85,
+                                                  "p95Ms":  234,
+                                                  "p99Ms":  234
+                                              },
+                          "redisFallback":  {
+                                                "avgMs":  5.04,
+                                                "p95Ms":  7,
+                                                "p99Ms":  7
+                                            },
+                          "improvementPercent":  97.77
+                      },
+    "circuitStates":  {
+                          "closedDurationSec":  128,
+                          "openDurationSec":  40,
+                          "halfOpenDurationSec":  95,
+                          "totalTransitions":  10
+                      },
+    "targets":  {
+                    "availabilityTarget":  99,
+                    "availabilityPass":  true,
+                    "fallbackSpeedTarget":  95,
+                    "fallbackSpeedPass":  true,
+                    "recoveryTimeTarget":  30,
+                    "recoveryTimePass":  true
+                }
+}

@@ -1,0 +1,841 @@
+{
+  "generatedAt" : "2026-02-06T14:05:24.825195900",
+  "report" : {
+    "nPlusOne" : {
+      "endpoint" : "/api/v1/orders/n-plus-one",
+      "totalRequests" : 50,
+      "avgLatencyMs" : 749.8606860000001,
+      "p95LatencyMs" : 1129.3861299999999,
+      "p99LatencyMs" : 0.0,
+      "avgQueriesPerRequest" : 94.0,
+      "avgConnectionWaitMs" : 1302033.48,
+      "totalConnectionWaitMs" : 65101674,
+      "errors" : 0
+    },
+    "optimized" : {
+      "endpoint" : "/api/v2/orders/optimized",
+      "totalRequests" : 50,
+      "avgLatencyMs" : 142.064396,
+      "p95LatencyMs" : 215.0739,
+      "p99LatencyMs" : 0.0,
+      "avgQueriesPerRequest" : 2.0,
+      "avgConnectionWaitMs" : 4495.32,
+      "totalConnectionWaitMs" : 224766,
+      "errors" : 0
+    },
+    "queryReductionPercent" : 97.87234042553192,
+    "executionImprovementPercent" : 81.05456138021884,
+    "connectionWaitReductionPercent" : 99.65474620514367,
+    "queryReductionPass" : true,
+    "executionImprovementPass" : true,
+    "connectionWaitReductionPass" : true,
+    "simulatedLatencyEnabled" : false,
+    "hibernateStats" : {
+      "queryExecutionCount" : 9,
+      "prepareStatementCount" : 5,
+      "connectCount" : 0
+    }
+  },
+  "recentV1Metrics" : [ {
+    "requestId" : "31695e9a-522b-4995-afab-b18abef988e9",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1101,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920694
+  }, {
+    "requestId" : "fd151a9d-d4e4-4319-9678-ee2d28554059",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1097,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920689
+  }, {
+    "requestId" : "e881c8cc-63ef-4d48-94c1-7bd9cbfd0732",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1099,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920689
+  }, {
+    "requestId" : "6761be26-ba85-47dd-b8ce-d259145bd9cf",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1074,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920665
+  }, {
+    "requestId" : "cfe07529-369e-4582-91e2-8e57652eff53",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1069,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920659
+  }, {
+    "requestId" : "3b3169bf-c8cd-4805-a02b-4947a612868d",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1069,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920658
+  }, {
+    "requestId" : "ad37d956-4078-40c0-a903-a88c91655bb6",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1071,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920653
+  }, {
+    "requestId" : "58fd493e-ded4-45bd-bce6-663186093d7d",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1059,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920647
+  }, {
+    "requestId" : "d076f525-e1a6-4fcf-8fa1-425d42c117fa",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1057,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920645
+  }, {
+    "requestId" : "72281db8-9757-4814-901a-798bffa04f6c",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 1057,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920645
+  }, {
+    "requestId" : "bd99aedf-bd8e-4213-9024-8ba62d6e64a6",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 977,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920562
+  }, {
+    "requestId" : "1a57ddc8-4d3e-40d4-979f-04934743fb7e",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 977,
+    "connectionWaitMs" : 2392958,
+    "status" : 200,
+    "timestampMs" : 1770366920562
+  }, {
+    "requestId" : "a887b497-21c0-4b85-8245-1150c414909f",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 975,
+    "connectionWaitMs" : 2211068,
+    "status" : 200,
+    "timestampMs" : 1770366920559
+  }, {
+    "requestId" : "526a65ea-b555-4848-99c2-683d2a4fc78f",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 911,
+    "connectionWaitMs" : 2120358,
+    "status" : 200,
+    "timestampMs" : 1770366920493
+  }, {
+    "requestId" : "4f3c4ea8-33e9-4ba2-beca-b72262e70497",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 908,
+    "connectionWaitMs" : 2120358,
+    "status" : 200,
+    "timestampMs" : 1770366920493
+  }, {
+    "requestId" : "f0dffefb-5043-4227-a6e5-7d4ad84221e7",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 898,
+    "connectionWaitMs" : 1951158,
+    "status" : 200,
+    "timestampMs" : 1770366920480
+  }, {
+    "requestId" : "024e03ff-082b-4aa0-8ae6-87e6280efdf2",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 890,
+    "connectionWaitMs" : 1867592,
+    "status" : 200,
+    "timestampMs" : 1770366920472
+  }, {
+    "requestId" : "2fdaa2ca-465b-43a1-b346-97dfea9756a6",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 885,
+    "connectionWaitMs" : 1784684,
+    "status" : 200,
+    "timestampMs" : 1770366920459
+  }, {
+    "requestId" : "bf184a65-68c4-4830-b1fc-63d8e6779a07",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 876,
+    "connectionWaitMs" : 1703092,
+    "status" : 200,
+    "timestampMs" : 1770366920454
+  }, {
+    "requestId" : "0d596959-43e6-4d9a-bf36-6444de007584",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 870,
+    "connectionWaitMs" : 1621970,
+    "status" : 200,
+    "timestampMs" : 1770366920449
+  }, {
+    "requestId" : "c63bc492-5190-4e5f-8735-dcac5faedbab",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 787,
+    "connectionWaitMs" : 1541130,
+    "status" : 200,
+    "timestampMs" : 1770366920363
+  }, {
+    "requestId" : "16885127-23f5-42bf-b6b7-8b0d1b470505",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 778,
+    "connectionWaitMs" : 1468280,
+    "status" : 200,
+    "timestampMs" : 1770366920351
+  }, {
+    "requestId" : "2f50294a-6346-48cb-a404-b0c61e9300eb",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 769,
+    "connectionWaitMs" : 1396558,
+    "status" : 200,
+    "timestampMs" : 1770366920346
+  }, {
+    "requestId" : "859ba77e-6a8c-44e4-8308-0b0bc87b72e7",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 714,
+    "connectionWaitMs" : 1325212,
+    "status" : 200,
+    "timestampMs" : 1770366920287
+  }, {
+    "requestId" : "79898662-e3ca-4e76-9e14-7fa39d16b2b3",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 705,
+    "connectionWaitMs" : 1259318,
+    "status" : 200,
+    "timestampMs" : 1770366920279
+  }, {
+    "requestId" : "2fcf3512-bd51-4f2b-a159-3debd823e07b",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 705,
+    "connectionWaitMs" : 1259318,
+    "status" : 200,
+    "timestampMs" : 1770366920278
+  }, {
+    "requestId" : "ce580065-abc3-4e31-86c5-72b5576a51f8",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 702,
+    "connectionWaitMs" : 1130256,
+    "status" : 200,
+    "timestampMs" : 1770366920270
+  }, {
+    "requestId" : "d57d1929-46a8-4746-8d7e-c9572a67e077",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 694,
+    "connectionWaitMs" : 1065678,
+    "status" : 200,
+    "timestampMs" : 1770366920261
+  }, {
+    "requestId" : "bd36c88a-a4a9-408f-a3c6-fb5b24b71332",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 694,
+    "connectionWaitMs" : 1001852,
+    "status" : 200,
+    "timestampMs" : 1770366920258
+  }, {
+    "requestId" : "a86690db-b5df-4842-aff7-10b73f4476fe",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 693,
+    "connectionWaitMs" : 1001852,
+    "status" : 200,
+    "timestampMs" : 1770366920258
+  }, {
+    "requestId" : "0b63d221-e2d5-4697-9ecc-2263db7e16de",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 611,
+    "connectionWaitMs" : 874670,
+    "status" : 200,
+    "timestampMs" : 1770366920178
+  }, {
+    "requestId" : "61270129-94d4-43b1-8656-ed8167b9534e",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 600,
+    "connectionWaitMs" : 818552,
+    "status" : 200,
+    "timestampMs" : 1770366920165
+  }, {
+    "requestId" : "026a0b8f-9cba-4c23-b1e3-9e4517f5a6d2",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 594,
+    "connectionWaitMs" : 763562,
+    "status" : 200,
+    "timestampMs" : 1770366920158
+  }, {
+    "requestId" : "c9642ac9-8c3e-4e4a-9534-0bd5a3406d08",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 546,
+    "connectionWaitMs" : 709136,
+    "status" : 200,
+    "timestampMs" : 1770366920109
+  }, {
+    "requestId" : "fecb331f-8577-4b4d-ba71-3d850371dad6",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 546,
+    "connectionWaitMs" : 659222,
+    "status" : 200,
+    "timestampMs" : 1770366920108
+  }, {
+    "requestId" : "b485f6b4-152a-4785-8807-bbda202a2c1d",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 534,
+    "connectionWaitMs" : 609402,
+    "status" : 200,
+    "timestampMs" : 1770366920095
+  }, {
+    "requestId" : "6bd20dac-f897-4c76-b98a-6faea2b7a498",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 532,
+    "connectionWaitMs" : 561180,
+    "status" : 200,
+    "timestampMs" : 1770366920088
+  }, {
+    "requestId" : "f3f160ef-3aa5-4233-9a3e-588b026fe66c",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 523,
+    "connectionWaitMs" : 512488,
+    "status" : 200,
+    "timestampMs" : 1770366920083
+  }, {
+    "requestId" : "dcf83994-6df2-4dbd-896c-bb45f48475fb",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 522,
+    "connectionWaitMs" : 464266,
+    "status" : 200,
+    "timestampMs" : 1770366920082
+  }, {
+    "requestId" : "b8bc7f0b-3e77-4e32-be54-233823b4a237",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 526,
+    "connectionWaitMs" : 416044,
+    "status" : 200,
+    "timestampMs" : 1770366920079
+  }, {
+    "requestId" : "3d25c957-1e48-4414-99e7-079897994e4d",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 445,
+    "connectionWaitMs" : 368104,
+    "status" : 200,
+    "timestampMs" : 1770366920000
+  }, {
+    "requestId" : "57c6adb3-534c-4021-aa5d-cc69ac7fd854",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 425,
+    "connectionWaitMs" : 327590,
+    "status" : 200,
+    "timestampMs" : 1770366919978
+  }, {
+    "requestId" : "9a36034f-28ba-4ade-8f1e-07eb16f56c91",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 403,
+    "connectionWaitMs" : 289144,
+    "status" : 200,
+    "timestampMs" : 1770366919957
+  }, {
+    "requestId" : "b8ab3904-9998-4132-89c2-f816dd02ad7d",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 347,
+    "connectionWaitMs" : 252390,
+    "status" : 200,
+    "timestampMs" : 1770366919900
+  }, {
+    "requestId" : "6f4fe1a9-0406-44c5-a5a1-501c256579c7",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 343,
+    "connectionWaitMs" : 220994,
+    "status" : 200,
+    "timestampMs" : 1770366919896
+  }, {
+    "requestId" : "b79914a1-1440-4526-a9d0-182858acd8fa",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 337,
+    "connectionWaitMs" : 189880,
+    "status" : 200,
+    "timestampMs" : 1770366919891
+  }, {
+    "requestId" : "48a836b7-32db-4336-8b5e-8ebd8f52c589",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 319,
+    "connectionWaitMs" : 159048,
+    "status" : 200,
+    "timestampMs" : 1770366919872
+  }, {
+    "requestId" : "89278510-767f-4616-843b-53c74136f2cc",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 319,
+    "connectionWaitMs" : 159048,
+    "status" : 200,
+    "timestampMs" : 1770366919872
+  }, {
+    "requestId" : "27f437b2-3d76-4542-be5b-d3b171c6b4a8",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 317,
+    "connectionWaitMs" : 100862,
+    "status" : 200,
+    "timestampMs" : 1770366919869
+  }, {
+    "requestId" : "c006c4aa-cbaa-43fa-90b1-032ea396ed46",
+    "path" : "/api/v1/orders/n-plus-one",
+    "sqlCount" : 94,
+    "executionTimeMs" : 315,
+    "connectionWaitMs" : 100862,
+    "status" : 200,
+    "timestampMs" : 1770366919868
+  } ],
+  "recentV2Metrics" : [ {
+    "requestId" : "90138a10-7327-46c7-9e3b-e4af34e9ceb7",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 213,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924432
+  }, {
+    "requestId" : "e46fba54-e48a-4234-a0ea-aabe5ee5fbbc",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 204,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924427
+  }, {
+    "requestId" : "77661fc7-e4c7-415b-a2eb-b3ee99b1aa09",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 196,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924418
+  }, {
+    "requestId" : "e2ae20f8-a909-4898-92cc-47b1ae42d915",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 196,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924418
+  }, {
+    "requestId" : "f685c139-3c5b-4477-8e79-a42f691084e5",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 192,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924414
+  }, {
+    "requestId" : "67ece1d1-4c22-421e-9f3a-a61b56cb7d2b",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 195,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924414
+  }, {
+    "requestId" : "bb034ffb-c8e0-41a8-905a-b0fcbea7e225",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 194,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924414
+  }, {
+    "requestId" : "5fcb10df-3b06-4850-bffa-361786c8dd33",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 192,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924412
+  }, {
+    "requestId" : "4013187c-d83d-49d6-873b-3ffc9b02d8ca",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 181,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924401
+  }, {
+    "requestId" : "6899a998-457c-41c2-b655-b3a2569068e9",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 179,
+    "connectionWaitMs" : 8426,
+    "status" : 200,
+    "timestampMs" : 1770366924398
+  }, {
+    "requestId" : "26c7bb74-ac64-4fc7-9c5a-bb2548a42679",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 177,
+    "connectionWaitMs" : 8100,
+    "status" : 200,
+    "timestampMs" : 1770366924395
+  }, {
+    "requestId" : "a86bcec8-53da-4b80-aada-36db6b46663f",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 166,
+    "connectionWaitMs" : 8100,
+    "status" : 200,
+    "timestampMs" : 1770366924384
+  }, {
+    "requestId" : "41d4bfbd-15af-424b-bd81-5d9bc0d68100",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 165,
+    "connectionWaitMs" : 7792,
+    "status" : 200,
+    "timestampMs" : 1770366924383
+  }, {
+    "requestId" : "7ba0b458-f1cb-45ca-952f-5ac5134fdb38",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 162,
+    "connectionWaitMs" : 7480,
+    "status" : 200,
+    "timestampMs" : 1770366924379
+  }, {
+    "requestId" : "41eeab58-154b-4c59-b072-5800fd42f725",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 160,
+    "connectionWaitMs" : 7176,
+    "status" : 200,
+    "timestampMs" : 1770366924376
+  }, {
+    "requestId" : "7b15c678-aed5-4b5a-9136-dcebeddf00d5",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 158,
+    "connectionWaitMs" : 6872,
+    "status" : 200,
+    "timestampMs" : 1770366924373
+  }, {
+    "requestId" : "a79372c9-ba51-4e8c-a517-2c39995404b3",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 158,
+    "connectionWaitMs" : 6872,
+    "status" : 200,
+    "timestampMs" : 1770366924373
+  }, {
+    "requestId" : "2fd4870b-ebed-4586-8723-232278cf9085",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 155,
+    "connectionWaitMs" : 6260,
+    "status" : 200,
+    "timestampMs" : 1770366924369
+  }, {
+    "requestId" : "d9122518-927f-4732-8a14-b49dcb803f04",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 152,
+    "connectionWaitMs" : 6260,
+    "status" : 200,
+    "timestampMs" : 1770366924369
+  }, {
+    "requestId" : "fac67fee-9834-488a-ba1a-c1c61c68d023",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 151,
+    "connectionWaitMs" : 5666,
+    "status" : 200,
+    "timestampMs" : 1770366924368
+  }, {
+    "requestId" : "40c3af47-e70b-4f4a-b4fc-56cdb5c9f0cd",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 144,
+    "connectionWaitMs" : 5370,
+    "status" : 200,
+    "timestampMs" : 1770366924358
+  }, {
+    "requestId" : "b03312e5-93ee-44e3-91a6-52cfa02ed69c",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 138,
+    "connectionWaitMs" : 5094,
+    "status" : 200,
+    "timestampMs" : 1770366924354
+  }, {
+    "requestId" : "a1842679-987e-47f9-9f09-00c565dcc3e4",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 139,
+    "connectionWaitMs" : 5094,
+    "status" : 200,
+    "timestampMs" : 1770366924354
+  }, {
+    "requestId" : "1c2418da-a3a0-421b-9d60-ec43c21d0f58",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 128,
+    "connectionWaitMs" : 4554,
+    "status" : 200,
+    "timestampMs" : 1770366924343
+  }, {
+    "requestId" : "a1aaec4a-d408-48d3-8738-5555b087550e",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 132,
+    "connectionWaitMs" : 4554,
+    "status" : 200,
+    "timestampMs" : 1770366924343
+  }, {
+    "requestId" : "54fe95ff-b424-4998-b4a1-34b8274a2f13",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 125,
+    "connectionWaitMs" : 4054,
+    "status" : 200,
+    "timestampMs" : 1770366924340
+  }, {
+    "requestId" : "1d102eee-693c-4a53-9175-0ad85157047d",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 124,
+    "connectionWaitMs" : 3810,
+    "status" : 200,
+    "timestampMs" : 1770366924339
+  }, {
+    "requestId" : "096cc6f2-7aae-4d2b-8e64-675721b07c39",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 123,
+    "connectionWaitMs" : 3810,
+    "status" : 200,
+    "timestampMs" : 1770366924338
+  }, {
+    "requestId" : "71440438-b7a1-4c60-93ab-e4b948925c71",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 122,
+    "connectionWaitMs" : 3570,
+    "status" : 200,
+    "timestampMs" : 1770366924337
+  }, {
+    "requestId" : "1f2a961f-1b85-496d-bfcf-b3ec9a9d5a00",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 122,
+    "connectionWaitMs" : 3570,
+    "status" : 200,
+    "timestampMs" : 1770366924336
+  }, {
+    "requestId" : "5ecccbcc-1908-4719-91c6-3f4e281ff0ca",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 107,
+    "connectionWaitMs" : 2860,
+    "status" : 200,
+    "timestampMs" : 1770366924321
+  }, {
+    "requestId" : "67a22df0-5343-4e1f-93e3-3b6fa3d70c5a",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 103,
+    "connectionWaitMs" : 2656,
+    "status" : 200,
+    "timestampMs" : 1770366924316
+  }, {
+    "requestId" : "d8d9be29-2046-474a-879c-0edc8512c3c7",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 96,
+    "connectionWaitMs" : 2460,
+    "status" : 200,
+    "timestampMs" : 1770366924307
+  }, {
+    "requestId" : "d21e90e2-c5c2-4685-8472-58cc8452b37b",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 93,
+    "connectionWaitMs" : 2460,
+    "status" : 200,
+    "timestampMs" : 1770366924307
+  }, {
+    "requestId" : "f9a29206-9368-464d-b472-ebb497808155",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 93,
+    "connectionWaitMs" : 2278,
+    "status" : 200,
+    "timestampMs" : 1770366924304
+  }, {
+    "requestId" : "3b94e53a-5846-4650-8e86-0a633157929a",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 96,
+    "connectionWaitMs" : 2280,
+    "status" : 200,
+    "timestampMs" : 1770366924304
+  }, {
+    "requestId" : "3ccec61a-52cd-40db-8be2-8a83938cb293",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 92,
+    "connectionWaitMs" : 1386,
+    "status" : 200,
+    "timestampMs" : 1770366924303
+  }, {
+    "requestId" : "0dda7e68-12ab-45fa-9dd2-46a5f10399fa",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 91,
+    "connectionWaitMs" : 1386,
+    "status" : 200,
+    "timestampMs" : 1770366924303
+  }, {
+    "requestId" : "da74aba6-c4ea-427f-8242-51c0df983afb",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 93,
+    "connectionWaitMs" : 1386,
+    "status" : 200,
+    "timestampMs" : 1770366924303
+  }, {
+    "requestId" : "b2510d5e-6474-4024-afe9-f1fffff71c04",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 91,
+    "connectionWaitMs" : 1386,
+    "status" : 200,
+    "timestampMs" : 1770366924303
+  }, {
+    "requestId" : "7f253043-8b19-4392-a61f-6d7b454b930f",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 74,
+    "connectionWaitMs" : 1036,
+    "status" : 200,
+    "timestampMs" : 1770366924280
+  }, {
+    "requestId" : "f05991ca-fc62-47f6-bbb9-fd0e6aafe47b",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 59,
+    "connectionWaitMs" : 804,
+    "status" : 200,
+    "timestampMs" : 1770366924266
+  }, {
+    "requestId" : "f95cf856-f011-4c68-ab59-4fd2127b054e",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 61,
+    "connectionWaitMs" : 906,
+    "status" : 200,
+    "timestampMs" : 1770366924266
+  }, {
+    "requestId" : "5cbb6003-44b1-4847-8da3-4e435b6744f3",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 60,
+    "connectionWaitMs" : 596,
+    "status" : 200,
+    "timestampMs" : 1770366924265
+  }, {
+    "requestId" : "c555f78c-0f54-4a30-815a-418f40b05204",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 58,
+    "connectionWaitMs" : 802,
+    "status" : 200,
+    "timestampMs" : 1770366924265
+  }, {
+    "requestId" : "5452867c-b189-4e8d-b353-bae4b6a3fbec",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 59,
+    "connectionWaitMs" : 596,
+    "status" : 200,
+    "timestampMs" : 1770366924264
+  }, {
+    "requestId" : "ed9e0d24-de5e-4c45-8e94-f41403fb95f4",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 57,
+    "connectionWaitMs" : 494,
+    "status" : 200,
+    "timestampMs" : 1770366924263
+  }, {
+    "requestId" : "e456859a-09ab-47de-ae87-56e3dd4d9805",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 51,
+    "connectionWaitMs" : 290,
+    "status" : 200,
+    "timestampMs" : 1770366924262
+  }, {
+    "requestId" : "cd924229-943e-4656-9ced-9eb19da92bc9",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 53,
+    "connectionWaitMs" : 194,
+    "status" : 200,
+    "timestampMs" : 1770366924261
+  }, {
+    "requestId" : "cd95340d-6afc-49d4-acbf-52342da96747",
+    "path" : "/api/v2/orders/optimized",
+    "sqlCount" : 2,
+    "executionTimeMs" : 51,
+    "connectionWaitMs" : 192,
+    "status" : 200,
+    "timestampMs" : 1770366924260
+  } ]
+}

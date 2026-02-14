@@ -1,0 +1,69 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:lifecycle-lab >----------------------
+[INFO] Building lifecycle-lab 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.8:run (default-cli) > test-compile @ lifecycle-lab >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ lifecycle-lab ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ lifecycle-lab ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ lifecycle-lab ---
+[INFO] skip non existing resourceDirectory D:\spring_boot_advanced_demos\lifecycle-lab\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ lifecycle-lab ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.3.8:run (default-cli) < test-compile @ lifecycle-lab <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.8:run (default-cli) @ lifecycle-lab ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.8)
+
+2026-02-13T22:24:55.191+05:30  INFO 21996 --- [           main] c.e.l.LifecycleLabApplication            : Starting LifecycleLabApplication using Java 21.0.8 with PID 21996 (D:\spring_boot_advanced_demos\lifecycle-lab\target\classes started by pilla in D:\spring_boot_advanced_demos\lifecycle-lab)
+2026-02-13T22:24:55.204+05:30  INFO 21996 --- [           main] c.e.l.LifecycleLabApplication            : No active profile set, falling back to 1 default profile: "default"
+BFPP: postProcessBeanFactory (before beans are instantiated)
+2026-02-13T22:24:56.942+05:30  INFO 21996 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-02-13T22:24:56.958+05:30  INFO 21996 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T22:24:56.959+05:30  INFO 21996 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-13T22:24:57.019+05:30  INFO 21996 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-13T22:24:57.020+05:30  INFO 21996 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1758 ms
+HelperBean: constructor
+LifecycleTarget: constructor
+LifecycleTarget: setter DI (setHelper)
+LifecycleTarget: BeanNameAware.setBeanName = lifecycleTarget
+LifecycleTarget: ApplicationContextAware.setApplicationContext
+BPP: BEFORE init  beanName=lifecycleTarget type=com.example.lifecyclelab.beans.LifecycleTarget
+LifecycleTarget: @PostConstruct
+LifecycleTarget: InitializingBean.afterPropertiesSet()
+BPP: AFTER  init  beanName=lifecycleTarget type=com.example.lifecyclelab.beans.LifecycleTarget$$SpringCGLIB$$0 isAopProxy=true
+InitMethodBean: constructor
+InitMethodBean: setMessage = set by BeanFactoryPostProcessor
+BPP: BEFORE init  beanName=initMethodBean type=com.example.lifecyclelab.beans.InitMethodBean
+InitMethodBean: custom init-method (init), message=set by BeanFactoryPostProcessor
+BPP: AFTER  init  beanName=initMethodBean type=com.example.lifecyclelab.beans.InitMethodBean isAopProxy=false
+2026-02-13T22:24:58.092+05:30  INFO 21996 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-02-13T22:24:58.187+05:30  INFO 21996 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-02-13T22:24:58.201+05:30  INFO 21996 --- [           main] c.e.l.LifecycleLabApplication            : Started LifecycleLabApplication in 3.529 seconds (process running for 3.992)
+Runner: bean class = com.example.lifecyclelab.beans.LifecycleTarget$$SpringCGLIB$$0, isAopProxy=true
+ASPECT: before String com.example.lifecyclelab.beans.LifecycleTarget.doWork(String)
+LifecycleTarget: doWork(hello)
+ASPECT: after  String com.example.lifecyclelab.beans.LifecycleTarget.doWork(String)
+2026-02-13T22:24:58.897+05:30  INFO 21996 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T22:24:58.897+05:30  INFO 21996 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T22:24:58.898+05:30  INFO 21996 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -1,0 +1,9 @@
+{
+    "timestamp":  "2026-02-11T16:06:27.7224808Z",
+    "counterKey":  "orders-benchmark-1770825782",
+    "node8080Hits":  51632,
+    "node8081Hits":  51632,
+    "absoluteDrift":  0,
+    "resultDirectory":  "D:\\spring_boot_advanced_demos\\circuit-breaker-demo\\benchmark-results\\20260211-213302",
+    "chaosDelaySeconds":  55
+}

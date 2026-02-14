@@ -1,0 +1,82 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: keycloak-realm
+  namespace: zerotrust
+data:
+  zerotrust-realm.json: |-
+    {
+      "realm": "zerotrust",
+      "enabled": true,
+      "displayName": "Zero Trust Demo",
+      "roles": {
+        "realm": [
+          { "name": "USER" },
+          { "name": "ADMIN" }
+        ]
+      },
+      "clients": [
+        {
+          "clientId": "postman-client",
+          "enabled": true,
+          "publicClient": true,
+          "directAccessGrantsEnabled": true,
+          "standardFlowEnabled": false,
+          "protocol": "openid-connect"
+        },
+        {
+          "clientId": "gateway-client",
+          "enabled": true,
+          "publicClient": false,
+          "secret": "gateway-secret",
+          "serviceAccountsEnabled": true,
+          "standardFlowEnabled": false,
+          "directAccessGrantsEnabled": false,
+          "protocol": "openid-connect"
+        },
+        {
+          "clientId": "microservices-client",
+          "enabled": true,
+          "publicClient": true,
+          "directAccessGrantsEnabled": false,
+          "standardFlowEnabled": true,
+          "protocol": "openid-connect"
+        }
+      ],
+      "users": [
+        {
+          "username": "alice",
+          "enabled": true,
+          "emailVerified": true,
+          "email": "alice@example.com",
+          "firstName": "Alice",
+          "lastName": "User",
+          "requiredActions": [],
+          "credentials": [
+            {
+              "type": "password",
+              "value": "alice123",
+              "temporary": false
+            }
+          ],
+          "realmRoles": ["USER"]
+        },
+        {
+          "username": "admin",
+          "enabled": true,
+          "emailVerified": true,
+          "email": "admin@example.com",
+          "firstName": "Admin",
+          "lastName": "User",
+          "requiredActions": [],
+          "credentials": [
+            {
+              "type": "password",
+              "value": "admin123",
+              "temporary": false
+            }
+          ],
+          "realmRoles": ["USER", "ADMIN"]
+        }
+      ]
+    }

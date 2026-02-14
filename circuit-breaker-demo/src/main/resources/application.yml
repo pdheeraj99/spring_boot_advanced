@@ -1,0 +1,80 @@
+spring:
+  application:
+    name: circuit-breaker-demo
+  devtools:
+    restart:
+      enabled: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2000ms
+      lettuce:
+        pool:
+          enabled: true
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+  cache:
+    type: redis
+    redis:
+      time-to-live: 5m
+
+app:
+  external-base-url: http://localhost:8080
+  hit-counter:
+    mode: in-memory
+    window-seconds: 300
+    redis-key-prefix: hit-counter
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        slow-call-rate-threshold: 50
+        slow-call-duration-threshold: 3s
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+        register-health-indicator: true
+    instances:
+      externalService:
+        base-config: default
+  retry:
+    configs:
+      default:
+        max-attempts: 2
+        wait-duration: 200ms
+    instances:
+      externalService:
+        base-config: default
+  timelimiter:
+    configs:
+      default:
+        timeout-duration: 3s
+        cancel-running-future: true
+    instances:
+      externalService:
+        base-config: default
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,circuitbreakers,circuitbreakerevents
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+
+logging:
+  level:
+    io.github.resilience4j: DEBUG
+    org.springframework.data.redis: DEBUG
+# DevTools probe 2026-02-06 15:15:09

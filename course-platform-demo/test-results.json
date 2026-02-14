@@ -1,0 +1,25 @@
+{
+    "executedAt":  "2026-02-09T14:15:50.1016548+05:30",
+    "smokeSuccess":  true,
+    "smokeMessage":  "Smoke suite executed successfully",
+    "smokeQueryComparison":  {
+                                 "v1Queries":  52,
+                                 "v2Queries":  2,
+                                 "reductionPercent":  96.15384615384616
+                             },
+    "courseComparison":  {
+                             "v1Queries":  57,
+                             "v2Queries":  2,
+                             "reductionPercent":  96.49122807017544
+                         },
+    "dashboardComparison":  {
+                                "v1Queries":  13,
+                                "v2Queries":  5,
+                                "reductionPercent":  61.53846153846154
+                            },
+    "latestMetric":  {
+                         "v1Queries":  13,
+                         "v2Queries":  5,
+                         "reductionPercent":  61.53846153846154
+                     }
+}

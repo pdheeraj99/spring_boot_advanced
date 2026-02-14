@@ -1,0 +1,5 @@
+com\example\courseplatformdemo\ApiIntegrationTests.class
+com\example\courseplatformdemo\CoursePlatformDemoApplicationTests.class
+com\example\courseplatformdemo\QueryBehaviorTests.class
+com\example\courseplatformdemo\EnrollmentServiceTests.class
+com\example\courseplatformdemo\RelationshipMappingTests.class

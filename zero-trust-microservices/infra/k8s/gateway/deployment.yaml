@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway
+  namespace: zerotrust
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gateway
+  template:
+    metadata:
+      labels:
+        app: gateway
+    spec:
+      containers:
+        - name: gateway
+          image: zerotrust/gateway:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8443
+          env:
+            - name: KEYCLOAK_ISSUER_URI
+              value: http://keycloak.zerotrust.svc.cluster.local:8080/realms/zerotrust
+            - name: GATEWAY_KEYSTORE_PASSWORD
+              value: changeit
+          volumeMounts:
+            - name: gateway-tls
+              mountPath: /etc/certs
+              readOnly: true
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8443
+              scheme: HTTPS
+            initialDelaySeconds: 60
+            periodSeconds: 10
+          startupProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8443
+              scheme: HTTPS
+            failureThreshold: 120
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8443
+              scheme: HTTPS
+            initialDelaySeconds: 150
+            periodSeconds: 20
+      volumes:
+        - name: gateway-tls
+          secret:
+            secretName: gateway-tls

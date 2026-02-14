@@ -1,0 +1,6 @@
+D:\spring_boot_advanced_demos\zero-trust-microservices\order-service\src\main\java\com\example\orders\config\KeycloakRealmRoleConverter.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\order-service\src\main\java\com\example\orders\config\SecurityConfig.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\order-service\src\main\java\com\example\orders\controller\OrderController.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\order-service\src\main\java\com\example\orders\model\OrderRequest.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\order-service\src\main\java\com\example\orders\OrderServiceApplication.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\order-service\src\main\java\com\example\orders\service\InventoryClient.java

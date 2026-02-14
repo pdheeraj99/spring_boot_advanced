@@ -1,0 +1,4 @@
+com\example\catalog\config\KeycloakRealmRoleConverter.class
+com\example\catalog\config\SecurityConfig.class
+com\example\catalog\CatalogServiceApplication.class
+com\example\catalog\controller\CatalogController.class

@@ -1,0 +1,15 @@
+com\demo\circuitbreaker\model\ProductResponse.class
+com\demo\circuitbreaker\model\ResponseSource.class
+com\demo\circuitbreaker\service\RedisCacheService.class
+com\demo\circuitbreaker\model\ExternalMode.class
+com\demo\circuitbreaker\model\Product$ProductBuilder.class
+com\demo\circuitbreaker\service\ExternalProductService.class
+com\demo\circuitbreaker\controller\ExternalProductController.class
+com\demo\circuitbreaker\service\CircuitBreakerMetricsService.class
+com\demo\circuitbreaker\controller\MetricsController.class
+com\demo\circuitbreaker\model\Product.class
+com\demo\circuitbreaker\controller\ProductController.class
+com\demo\circuitbreaker\CircuitBreakerDemoApplication.class
+com\demo\circuitbreaker\config\AppConfig.class
+com\demo\circuitbreaker\model\ProductResponse$ProductResponseBuilder.class
+com\demo\circuitbreaker\service\ProductService.class

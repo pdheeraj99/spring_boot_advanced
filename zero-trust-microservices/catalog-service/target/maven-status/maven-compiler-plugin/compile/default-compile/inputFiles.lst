@@ -1,0 +1,4 @@
+D:\spring_boot_advanced_demos\zero-trust-microservices\catalog-service\src\main\java\com\example\catalog\CatalogServiceApplication.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\catalog-service\src\main\java\com\example\catalog\config\KeycloakRealmRoleConverter.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\catalog-service\src\main\java\com\example\catalog\config\SecurityConfig.java
+D:\spring_boot_advanced_demos\zero-trust-microservices\catalog-service\src\main\java\com\example\catalog\controller\CatalogController.java

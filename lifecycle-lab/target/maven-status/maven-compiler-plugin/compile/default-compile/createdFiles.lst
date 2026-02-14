@@ -1,0 +1,9 @@
+com\example\lifecyclelab\beans\LifecycleTarget.class
+com\example\lifecyclelab\beans\InitMethodBean.class
+com\example\lifecyclelab\config\BeansConfig.class
+com\example\lifecyclelab\LifecycleLabApplication.class
+com\example\lifecyclelab\Runner.class
+com\example\lifecyclelab\lifecycle\DemoBeanFactoryPostProcessor.class
+com\example\lifecyclelab\beans\HelperBean.class
+com\example\lifecyclelab\lifecycle\LoggingBeanPostProcessor.class
+com\example\lifecyclelab\aop\TracingAspect.class

@@ -1,0 +1,4 @@
+com\example\hibernaterelationshipslab\integration\AppointmentIntegrationTest.class
+com\example\hibernaterelationshipslab\integration\PatientInsuranceCardIntegrationTest.class
+com\example\hibernaterelationshipslab\integration\DoctorSpecialtyIntegrationTest.class
+com\example\hibernaterelationshipslab\integration\ReadEndpointsIntegrationTest.class
