@@ -1,0 +1,6 @@
+com\example\hibernateonetoonedemo\repository\WifeRepository.class
+com\example\hibernateonetoonedemo\HibernateOnetooneDemoApplication.class
+com\example\hibernateonetoonedemo\bootstrap\DataRunner.class
+com\example\hibernateonetoonedemo\entity\Wife.class
+com\example\hibernateonetoonedemo\entity\Husband.class
+com\example\hibernateonetoonedemo\repository\HusbandRepository.class
