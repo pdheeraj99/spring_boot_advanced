@@ -1,8 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { debugApi } from "../api/debugApi";
 import type { SqlTrace } from "../types/models";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import sql from "react-syntax-highlighter/dist/esm/languages/prism/sql";
+
+SyntaxHighlighter.registerLanguage("sql", sql);
 
 export function SqlMonitorPage() {
   const [traces, setTraces] = useState<SqlTrace[]>([]);

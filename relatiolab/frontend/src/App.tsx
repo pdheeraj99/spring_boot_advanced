@@ -1,9 +1,11 @@
+import { lazy, Suspense } from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
-import { StudentsPage } from "./pages/StudentsPage";
-import { CoursesPage } from "./pages/CoursesPage";
-import { MentorsPage } from "./pages/MentorsPage";
-import { NPlusOnePage } from "./pages/NPlusOnePage";
-import { SqlMonitorPage } from "./pages/SqlMonitorPage";
+
+const StudentsPage = lazy(() => import("./pages/StudentsPage").then((m) => ({ default: m.StudentsPage })));
+const CoursesPage = lazy(() => import("./pages/CoursesPage").then((m) => ({ default: m.CoursesPage })));
+const MentorsPage = lazy(() => import("./pages/MentorsPage").then((m) => ({ default: m.MentorsPage })));
+const NPlusOnePage = lazy(() => import("./pages/NPlusOnePage").then((m) => ({ default: m.NPlusOnePage })));
+const SqlMonitorPage = lazy(() => import("./pages/SqlMonitorPage").then((m) => ({ default: m.SqlMonitorPage })));
 
 const navItems = [
   ["/students", "Students"],
@@ -28,14 +30,16 @@ export default function App() {
         ))}
       </nav>
       <main>
-        <Routes>
-          <Route path="/" element={<StudentsPage />} />
-          <Route path="/students" element={<StudentsPage />} />
-          <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/mentors" element={<MentorsPage />} />
-          <Route path="/nplus1" element={<NPlusOnePage />} />
-          <Route path="/sql-monitor" element={<SqlMonitorPage />} />
-        </Routes>
+        <Suspense fallback={<div className="card shimmer">Loading page...</div>}>
+          <Routes>
+            <Route path="/" element={<StudentsPage />} />
+            <Route path="/students" element={<StudentsPage />} />
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/mentors" element={<MentorsPage />} />
+            <Route path="/nplus1" element={<NPlusOnePage />} />
+            <Route path="/sql-monitor" element={<SqlMonitorPage />} />
+          </Routes>
+        </Suspense>
       </main>
     </div>
   );

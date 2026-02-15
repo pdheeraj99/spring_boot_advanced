@@ -27,6 +27,7 @@ body {
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(17, 103, 209, 0.25);
+  animation: riseIn 500ms ease-out;
 }
 .hero h1 { margin: 0; font-size: 2rem; }
 .hero p { margin-top: 6px; opacity: 0.9; }
@@ -40,8 +41,10 @@ body {
   background: #fff;
   border: 1px solid var(--border);
   font-weight: 600;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
 }
 .nav-link.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.nav-link:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(15, 58, 128, 0.16); }
 
 .grid { display: grid; gap: 14px; }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
@@ -51,7 +54,10 @@ body {
   border-radius: 14px;
   padding: 14px;
   box-shadow: 0 3px 12px rgba(28, 44, 77, 0.05);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  animation: riseIn 420ms ease-out;
 }
+.card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(21, 47, 90, 0.12); }
 .card h2 { margin-top: 0; font-size: 1.1rem; }
 
 label { font-size: 0.9rem; color: var(--ink-soft); display: block; margin-bottom: 4px; }
@@ -67,7 +73,10 @@ button {
   color: #fff;
   cursor: pointer;
   font-weight: 700;
+  transition: transform 140ms ease, box-shadow 140ms ease, opacity 140ms ease;
 }
+button:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(17, 103, 209, 0.28); }
+button:active { transform: translateY(0); }
 button.secondary { background: #fff; color: var(--ink); }
 button.danger { background: var(--danger); }
 .inline { display: flex; gap: 8px; }
@@ -76,12 +85,29 @@ button.danger { background: var(--danger); }
 table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 th, td { border-bottom: 1px solid var(--border); padding: 8px; text-align: left; }
 th { position: sticky; top: 0; background: #f0f5ff; }
+tbody tr:nth-child(even) { background: #fbfdff; }
+tbody tr:hover { background: #edf5ff; }
+.table-wrap { overflow: auto; max-height: 460px; border: 1px solid var(--border); border-radius: 10px; }
 
 .badge { display: inline-block; font-size: 0.75rem; padding: 4px 8px; border-radius: 999px; background: #eaf3ff; color: #1250a3; }
 .error { color: var(--danger); font-weight: 600; margin: 8px 0; }
 .success { color: #0f8f54; font-weight: 600; margin: 8px 0; }
 
 .sql-box { max-height: 440px; overflow: auto; border: 1px solid var(--border); border-radius: 10px; }
+.shimmer {
+  background: linear-gradient(110deg, #ffffff 8%, #ecf3ff 18%, #ffffff 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.3s linear infinite;
+}
+
+@keyframes shimmer {
+  to { background-position-x: -200%; }
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 @media (max-width: 720px) {
   .hero h1 { font-size: 1.6rem; }

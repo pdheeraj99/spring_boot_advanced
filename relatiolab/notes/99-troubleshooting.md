@@ -15,10 +15,11 @@ spring.datasource.password=7!X0rPX0H^hQnM#h8%K%
 Annotation: wrong password unte startup fail with datasource auth error.
 
 ## Common Mistakes
-1. MySQL service run ????????.
-2. wrong Java version (21 ????????).
+1. MySQL service not running.
+2. wrong Java version (not Java 21).
 3. frontend proxy misconfig (`/api`).
-4. CORS config ??????? direct backend calls.
+4. CORS config missing for direct backend calls.
+5. Massive startup seeding takes time; wait for completion logs.
 
 ## Interview Talking Points
 - "I use integration tests + SQL monitor to validate mapping issues."
@@ -26,5 +27,6 @@ Annotation: wrong password unte startup fail with datasource auth error.
 
 ## Related Files
 - `backend/src/main/resources/application.properties`
+- `backend/src/main/java/com/relatiolab/bootstrap/MassiveDataSeeder.java`
 - `backend/src/main/java/com/relatiolab/config/WebConfig.java`
 - `frontend/vite.config.ts`

@@ -48,24 +48,26 @@ export function StudentsPage() {
 
       <section className="card">
         <h2>OneToOne + OneToMany View</h2>
-        <table>
-          <thead><tr><th>Name</th><th>Profile</th><th>Enrollments</th><th>Action</th></tr></thead>
-          <tbody>
-            {students.map((s) => (
-              <tr key={s.id}>
-                <td>{s.name}<div className="badge">{s.email}</div></td>
-                <td>{s.profile ? s.profile.phone : "No profile"}</td>
-                <td>{s.enrollments.length}</td>
-                <td>
-                  <div className="inline">
-                    <button className="secondary" onClick={() => addProfile(s.id)}>Upsert Profile</button>
-                    <button className="danger" onClick={() => deleteProfile(s.id)}>Delete Profile</button>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div className="table-wrap">
+          <table>
+            <thead><tr><th>Name</th><th>Profile</th><th>Enrollments</th><th>Action</th></tr></thead>
+            <tbody>
+              {students.map((s) => (
+                <tr key={s.id}>
+                  <td>{s.name}<div className="badge">{s.email}</div></td>
+                  <td>{s.profile ? s.profile.phone : "No profile"}</td>
+                  <td>{s.enrollments.length}</td>
+                  <td>
+                    <div className="inline">
+                      <button className="secondary" onClick={() => addProfile(s.id)}>Upsert Profile</button>
+                      <button className="danger" onClick={() => deleteProfile(s.id)}>Delete Profile</button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
   );

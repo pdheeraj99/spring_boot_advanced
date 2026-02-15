@@ -20,6 +20,24 @@ Full-stack learning lab for JPA/Hibernate relationships with MySQL, Spring Boot,
 - Username: `root`
 - Password: `7!X0rPX0H^hQnM#h8%K%`
 
+## Default Massive Seed (Startup)
+By default, app startup inserts a high-volume dataset (~1M rows total across core tables) for realistic N+1 benchmarking.
+
+Properties:
+- `relatiolab.seed.enabled=true`
+- `relatiolab.seed.students=100000`
+- `relatiolab.seed.courses=20000`
+- `relatiolab.seed.mentors=5000`
+- `relatiolab.seed.skills=1000`
+- `relatiolab.seed.enrollments=700000`
+- `relatiolab.seed.mentor-courses=50000`
+- `relatiolab.seed.mentor-skills=24000`
+
+To disable temporarily:
+```powershell
+mvnd spring-boot:run -Dspring-boot.run.jvmArguments="-Drelatiolab.seed.enabled=false"
+```
+
 ## Run Backend
 ```powershell
 cd backend

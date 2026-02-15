@@ -6,13 +6,14 @@ Command:
 
 Result:
 - Status: PASS
-- Tests: 5 passed
+- Tests: 6 passed
 - Coverage highlights:
   - OneToOne orphan removal
   - OneToMany orphan removal
   - Duplicate enrollment conflict (409)
   - Debug SQL endpoint request-id check
   - N+1 comparison endpoint basic metrics response
+  - Startup massive seeder test (small override counts) verified
 
 ## Automated Frontend
 Commands:
@@ -24,6 +25,8 @@ Result:
 - `npm run test`: PASS (1 test)
 - `npm run lint`: PASS
 - `npm run build`: PASS
+  - route-level lazy chunking enabled
+  - syntax highlighter split reduced from ~636 kB to ~56 kB chunk
 
 ## Manual Scenario Checklist
 1. Student + profile create flow: READY

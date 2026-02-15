@@ -26,21 +26,23 @@ export function CoursesPage() {
         </button>
       </section>
       <section className="card">
-        <h2>ManyToMany: Course ? Mentor</h2>
-        <table><thead><tr><th>Course</th><th>Mentors</th><th>Link</th></tr></thead><tbody>
-          {courses.map((c) => (
-            <tr key={c.id}>
-              <td>{c.title}</td>
-              <td>{c.mentors.map((m) => m.name).join(", ") || "None"}</td>
-              <td>
-                <select onChange={async (e) => { if (!e.target.value) return; await courseApi.linkMentor(c.id, Number(e.target.value)); await load(); }}>
-                  <option value="">Assign mentor</option>
-                  {mentors.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
-                </select>
-              </td>
-            </tr>
-          ))}
-        </tbody></table>
+        <h2>ManyToMany: Course {"<->"} Mentor</h2>
+        <div className="table-wrap">
+          <table><thead><tr><th>Course</th><th>Mentors</th><th>Link</th></tr></thead><tbody>
+            {courses.map((c) => (
+              <tr key={c.id}>
+                <td>{c.title}</td>
+                <td>{c.mentors.map((m) => m.name).join(", ") || "None"}</td>
+                <td>
+                  <select onChange={async (e) => { if (!e.target.value) return; await courseApi.linkMentor(c.id, Number(e.target.value)); await load(); }}>
+                    <option value="">Assign mentor</option>
+                    {mentors.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
+                  </select>
+                </td>
+              </tr>
+            ))}
+          </tbody></table>
+        </div>
       </section>
     </div>
   );
