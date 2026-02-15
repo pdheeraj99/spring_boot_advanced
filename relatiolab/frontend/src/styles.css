@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+
+:root {
+  --bg-1: #f5f9ff;
+  --bg-2: #e8f1ff;
+  --card: #ffffff;
+  --ink: #1e2533;
+  --ink-soft: #4d5a74;
+  --brand: #1167d1;
+  --brand-2: #2ca58d;
+  --danger: #bf1650;
+  --border: #d6deeb;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  background: radial-gradient(circle at top right, var(--bg-2), var(--bg-1));
+  color: var(--ink);
+}
+
+.app-shell { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.hero {
+  background: linear-gradient(120deg, #0e3c74, #1979d6);
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(17, 103, 209, 0.25);
+}
+.hero h1 { margin: 0; font-size: 2rem; }
+.hero p { margin-top: 6px; opacity: 0.9; }
+
+.top-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 16px; }
+.nav-link {
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--border);
+  font-weight: 600;
+}
+.nav-link.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+.grid { display: grid; gap: 14px; }
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 3px 12px rgba(28, 44, 77, 0.05);
+}
+.card h2 { margin-top: 0; font-size: 1.1rem; }
+
+label { font-size: 0.9rem; color: var(--ink-soft); display: block; margin-bottom: 4px; }
+input, select, button, textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 10px;
+  font-family: inherit;
+}
+button {
+  background: var(--brand);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+button.secondary { background: #fff; color: var(--ink); }
+button.danger { background: var(--danger); }
+.inline { display: flex; gap: 8px; }
+.inline > * { flex: 1; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { border-bottom: 1px solid var(--border); padding: 8px; text-align: left; }
+th { position: sticky; top: 0; background: #f0f5ff; }
+
+.badge { display: inline-block; font-size: 0.75rem; padding: 4px 8px; border-radius: 999px; background: #eaf3ff; color: #1250a3; }
+.error { color: var(--danger); font-weight: 600; margin: 8px 0; }
+.success { color: #0f8f54; font-weight: 600; margin: 8px 0; }
+
+.sql-box { max-height: 440px; overflow: auto; border: 1px solid var(--border); border-radius: 10px; }
+
+@media (max-width: 720px) {
+  .hero h1 { font-size: 1.6rem; }
+}
