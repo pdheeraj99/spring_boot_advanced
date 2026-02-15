@@ -1,8 +1,0 @@
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\bootstrap\ConnectionPoolProofRunner.java
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\bootstrap\ConnectionWorkService.java
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\bootstrap\DataRunner.java
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\entity\Husband.java
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\entity\Wife.java
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\HibernateOnetooneDemoApplication.java
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\repository\HusbandRepository.java
-D:\spring_boot_advanced_demos\hibernate-onetoone-demo\src\main\java\com\example\hibernateonetoonedemo\repository\WifeRepository.java

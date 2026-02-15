@@ -1,7 +1,0 @@
-com\example\hibernateonetomanydemo\entity\User.class
-com\example\hibernateonetomanydemo\HibernateOneToManyDemoApplication.class
-com\example\hibernateonetomanydemo\repository\OrderRepository.class
-com\example\hibernateonetomanydemo\repository\UserRepository.class
-com\example\hibernateonetomanydemo\entity\Order.class
-com\example\hibernateonetomanydemo\bootstrap\DataRunner.class
-com\example\hibernateonetomanydemo\bootstrap\DemoReadService.class
