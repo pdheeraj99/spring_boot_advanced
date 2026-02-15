@@ -1,6 +1,11 @@
 # === Compiled class files ===
 *.class
 
+# === Node modules ===
+node_modules/
+.env
+dist/
+
 # === Build output directories ===
 target/
 build/
