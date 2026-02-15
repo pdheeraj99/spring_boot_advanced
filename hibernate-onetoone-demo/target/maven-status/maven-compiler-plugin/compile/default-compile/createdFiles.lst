@@ -4,3 +4,5 @@ com\example\hibernateonetoonedemo\bootstrap\DataRunner.class
 com\example\hibernateonetoonedemo\entity\Wife.class
 com\example\hibernateonetoonedemo\entity\Husband.class
 com\example\hibernateonetoonedemo\repository\HusbandRepository.class
+com\example\hibernateonetoonedemo\bootstrap\ConnectionPoolProofRunner.class
+com\example\hibernateonetoonedemo\bootstrap\ConnectionWorkService.class
