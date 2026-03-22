@@ -1,0 +1,15 @@
+meta {
+  name: Get Employee Projects
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8081/api/employees/{{employeeId}}/projects
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

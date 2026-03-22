@@ -1,0 +1,5 @@
+//map1 - a=10, b=20, c=30
+//map2 - x=30, b=40, z=60
+Output map3 to add values if key is same. If not, keep as it is
+
+ Map<String>

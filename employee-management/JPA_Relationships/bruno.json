@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "JPA_Relationships",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

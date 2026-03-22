@@ -1,0 +1,15 @@
+meta {
+  name: Get Missing Employee (404)
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8081/api/employees/999999999
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

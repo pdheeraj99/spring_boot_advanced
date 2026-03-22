@@ -1,0 +1,23 @@
+meta {
+  name: Create Project
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8081/api/projects
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Apollo",
+    "deadline": "2028-12-31"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

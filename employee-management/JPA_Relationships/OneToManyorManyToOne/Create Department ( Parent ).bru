@@ -1,0 +1,23 @@
+meta {
+  name: Create Department ( Parent )
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8081/api/departments
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Engineering",
+    "location": "Building A"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

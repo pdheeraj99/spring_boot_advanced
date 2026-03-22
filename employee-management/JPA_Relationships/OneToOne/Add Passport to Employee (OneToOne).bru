@@ -1,0 +1,23 @@
+meta {
+  name: Add Passport to Employee (OneToOne)
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8081/api/employees/{{employeeId}}/passport
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "passportNumber": "P1234567",
+    "issuedCountry": "India"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

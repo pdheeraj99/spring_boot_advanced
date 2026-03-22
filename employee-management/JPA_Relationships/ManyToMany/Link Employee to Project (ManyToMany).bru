@@ -1,0 +1,15 @@
+meta {
+  name: Link Employee to Project (ManyToMany)
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8081/api/projects/{{projectId}}/employees/{{employeeId}}
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

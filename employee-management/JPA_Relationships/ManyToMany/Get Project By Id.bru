@@ -1,0 +1,15 @@
+meta {
+  name: Get Project By Id
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8081/api/projects/{{projectId}}
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
